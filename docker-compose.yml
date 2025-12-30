@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  practice2-app:
+    build:
+      context: ./Practice2
+      dockerfile: Dockerfile
+    image: cr.alkhwarizmi.online/testrepo:latest
+    container_name: practice2-console
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+    stdin_open: true
+    tty: true

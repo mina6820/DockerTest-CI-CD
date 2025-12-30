@@ -20,10 +20,10 @@ jobs:
           username: ${{ secrets.NEXUS_USERNAME }}
           password: ${{ secrets.NEXUS_PASSWORD }}
 
-      - name: Build Docker image
+      - name: Build Docker image with Docker Compose
         run: |
-          docker build -t cr.alkhwarizmi.online/testrepo:latest ./Practice2
+          docker-compose build
 
-      - name: Push Docker image
+      - name: Push Docker image with Docker Compose
         run: |
-          docker push cr.alkhwarizmi.online/testrepo:latest
+          docker-compose push
