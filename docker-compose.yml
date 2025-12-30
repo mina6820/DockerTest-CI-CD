@@ -5,7 +5,7 @@ services:
     build:
       context: ./Practice2
       dockerfile: Dockerfile
-    image: cr.alkhwarizmi.online/testrepo:latest
+    image: cr.alkhwarizmi.online/testrepo:latest2
     container_name: practice2-console
     environment:
       - DOTNET_ENVIRONMENT=Development
